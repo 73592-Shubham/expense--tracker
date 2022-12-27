@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body class="content">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="TRACKER2.js"></script>
+        <div class="middle">
+            <h2 class="txt" id="txth" >Expense Tracker</h2>
+            <form action="#" onsubmit="saveToLocalStorage(event)">
+                <label>Choose expense amount :</label>
+                <input id="amt" class="frm" type="number"  name="amount" required>
+                <label>Choose description :</label>
+                <input id="des" class="frm" type="text"  name="description" required>
+                <label for="categeory">Choose a categeory:</label>
+                <select name="categeory" id="categeory">
+                    <option value="fuel">Fuel</option>
+                    <option value="food">Food</option>
+                    <option value="electricity">Electricity</option>
+                    <option value="movie">Movie</option>
+                </select>
+               <input type="submit" class='btn' id="makecall" name="makecall" value="Add Expense"> 
+            </form>
+            <ul id="listOfUsers"></ul>
+
+        </div>       
+</body>
+</html>
